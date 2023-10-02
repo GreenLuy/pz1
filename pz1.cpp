@@ -26,7 +26,6 @@ D procc(U n, U i)
    {
       res += 4. * pow(-1, i) / (2 * i + 1);
    }
-   printf_s("Результат: %Lf \n", res);
 
    return res;
 }
@@ -42,6 +41,7 @@ int main()
    //auto t1 = std::chrono::high_resolution_clock::now();
    //D res = procc(n, i);
    //auto t2 = std::chrono::high_resolution_clock::now();
+   printf_s("Результат: %Lf \n", res);
    auto sec = duration_cast<duration<double>>(end - start);
    printf_s("Время выполнения: %lf ms.\n", sec.count()) /*std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count())*/;
 
